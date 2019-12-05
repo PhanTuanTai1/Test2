@@ -24,6 +24,11 @@
                 <action android:name="com.example.myapplication.ImplementService.BIND"></action>
             </intent-filter>
         </service>
+        <service android:name=".SerivceUnBound"
+            android:exported="true"
+            android:enabled="true"
+            >
+        </service>
     </application>
 
 </manifest>

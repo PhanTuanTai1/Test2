@@ -58,6 +58,11 @@ public class ImplementService extends Service{
             return   db.getCount(sql);
         }
 
+        @Override
+        public int delete(String code) throws RemoteException {
+            return db.delete(code);
+        }
+
 
     };
     @Nullable

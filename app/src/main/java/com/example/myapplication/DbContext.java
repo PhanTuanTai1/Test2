@@ -49,6 +49,10 @@ public class DbContext extends SQLiteOpenHelper {
         }
         return nhanViens;
     }
+    public int delete(String code){
+        SQLiteDatabase db = getWritableDatabase();
+        return db.delete("NhanVien","maNV =" + code,null);
+    }
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
 

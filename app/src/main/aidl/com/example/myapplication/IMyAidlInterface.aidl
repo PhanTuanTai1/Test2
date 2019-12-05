@@ -14,4 +14,5 @@ interface IMyAidlInterface {
     int add(in Bundle object);
     List<NhanVien> getData(String sql);
     int getCount(String sql);
+    int delete(String code);
 }
